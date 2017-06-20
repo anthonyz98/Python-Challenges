@@ -1,0 +1,11 @@
+my_file = "learning_python.txt"
+
+text_string = ""
+
+with open(my_file) as file_object:
+    lines = file_object.read()
+
+for line_in_file in lines:
+    text_string += line_in_file
+
+print(text_string)
